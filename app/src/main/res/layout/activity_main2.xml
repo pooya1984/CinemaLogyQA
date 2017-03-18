@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37474F"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.cinemalogyqa.Main2Activity">
+
+    <TextView
+        android:id="@+id/text_view_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerVertical="false"
+        android:fontFamily="casual"
+        android:text="Which movie won the best foriegn language oscar 1989?"
+        android:textAlignment="center"
+        android:textColor="#FF5722"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="false"
+        android:src="@drawable/theater_icon" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_one">
+        <RadioButton
+            android:textColorHint="#FF5722"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What happend to Sandiago"
+            android:textColor="#FF5722"/>
+        <RadioButton
+            android:id="@+id/corect_answer"
+            android:textColorHint="#FF5722"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cinema Paradiso"
+            android:textColor="#FF5722"/>
+        <RadioButton
+            android:textColorHint="#FF5722"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camille Claudel"
+            android:textColor="#FF5722"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/open_second_q"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/radio_group"
+        android:layout_marginTop="16dp"
+        android:onClick="OpenSecondQ"
+        android:text="next" />
+
+</RelativeLayout>
