@@ -31,42 +31,23 @@
         android:layout_alignParentRight="false"
         android:src="@drawable/theater_icon" />
 
-    <RadioGroup
-        android:id="@+id/radio_group"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/edit_text_view"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text_view_one">
+        android:layout_below="@id/text_view_one"
+        android:textSize="20sp"
+        android:hint="Wright your Answer here"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white" />
 
-        <RadioButton
-            android:id="@+id/corect_answer_two"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ken loach"
-            android:textColor="#FF5722"
-            android:textColorHint="#FF5722" />
-
-        <RadioButton
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="A.Kiarostami"
-            android:textColor="#FF5722"
-            android:textColorHint="#FF5722" />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Tornatore"
-            android:textColor="#FF5722"
-            android:textColorHint="#FF5722" />
-    </RadioGroup>
 
     <Button
         android:id="@+id/open_third_q"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_below="@id/radio_group"
+        android:layout_below="@id/edit_text_view"
         android:layout_marginTop="16dp"
         android:onClick="OpenThirdQ"
         android:text="next" />

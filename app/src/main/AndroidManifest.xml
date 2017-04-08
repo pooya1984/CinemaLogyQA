@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/masks_icon"
-        android:label="@string/app_name"
+        android:label="Cinemalogy Quizz"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -15,15 +15,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity" />
-        <activity android:name=".Main3Activity" />
-        <activity android:name=".Main4Activity" />
-        <activity android:name=".Main5Activity" />
-        <activity android:name=".Main6Activity" />
-        <activity android:name=".Main7Activity" />
-        <activity android:name=".Main8Activity" />
-        <activity android:name=".Main9Activity" />
-        <activity android:name=".Main10Activity"></activity>
+        <activity android:name=".Main2Activity"
+            android:label="Question One"/>
+        <activity android:name=".Main3Activity"
+            android:label="Question Two" />
+        <activity android:name=".Main4Activity"
+            android:label="Question Three" />
+        <activity android:name=".Main5Activity"
+            android:label="Question Four" />
+        <activity android:name=".Main6Activity"
+            android:label="Question Five"/>
+        <activity android:name=".Main7Activity"
+            android:label="Question Six" />
+        <activity android:name=".Main8Activity"
+            android:label="Question Seven" />
+        <activity android:name=".Main9Activity"
+            android:label="Question Eight"/>
+        <activity android:name=".Main10Activity"
+            android:label="Result" />
+        <activity android:name=".About"></activity>
     </application>
 
 </manifest>
