@@ -18,7 +18,7 @@
         android:layout_centerVertical="false"
         android:layout_marginTop="30dp"
         android:fontFamily="casual"
-        android:text="Which Director won Palme d'or twice?"
+        android:text="Which Director won Palme d'or 2016?"
         android:textAlignment="center"
         android:textColor="#FF5722"
         android:textSize="20dp"
