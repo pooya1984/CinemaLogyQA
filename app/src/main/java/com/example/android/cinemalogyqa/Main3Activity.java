@@ -7,15 +7,12 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.RadioButton;
 import android.widget.Toast;
 
 public class Main3Activity extends AppCompatActivity {
 
     int quantity;
     String message;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +24,6 @@ public class Main3Activity extends AppCompatActivity {
         message = mIntent.getStringExtra("message_key");
 
     }
-
     public void OpenThirdQ (View view){
         EditText nameField = (EditText) findViewById(R.id.edit_text_view);
         String name = nameField.getText().toString();
@@ -42,7 +38,6 @@ public class Main3Activity extends AppCompatActivity {
         startActivity(myIntent);
 
     }
-
     //menubar links
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -51,7 +46,6 @@ public class Main3Activity extends AppCompatActivity {
         inflater.inflate(R.menu.menu_main, menu);
         return true;
     }
-
     @Override
     public boolean onOptionsItemSelected (MenuItem item){
         switch (item.getItemId()){
@@ -64,6 +58,4 @@ public class Main3Activity extends AppCompatActivity {
             default:
         }
         return super.onOptionsItemSelected(item);}
-
-
 }

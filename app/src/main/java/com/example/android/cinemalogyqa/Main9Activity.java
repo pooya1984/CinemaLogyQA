@@ -21,7 +21,6 @@ public class Main9Activity extends AppCompatActivity {
         quantity = mIntent.getIntExtra("score", 0);
         message = mIntent.getStringExtra("message_key");
     }
-
     public void OpenNineQ (View view){
         RadioButton answer1 = (RadioButton) findViewById(R.id.corect_answer_eight);
         boolean right1 = answer1.isChecked();
@@ -33,5 +32,4 @@ public class Main9Activity extends AppCompatActivity {
         myIntent.putExtra("message_key",message);
         startActivity(myIntent);
 
-    }
-}
+    }}

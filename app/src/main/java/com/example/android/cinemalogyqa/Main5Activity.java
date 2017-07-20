@@ -24,7 +24,6 @@ public class Main5Activity extends AppCompatActivity {
         quantity = mIntent.getIntExtra("score", 0);
         message = mIntent.getStringExtra("message_key");
     }
-
     public void OpenFiveQ (View view){
         RadioButton answer1 = (RadioButton) findViewById(R.id.corect_answer_four);
         boolean right1 = answer1.isChecked();
@@ -37,7 +36,6 @@ public class Main5Activity extends AppCompatActivity {
         startActivity(myIntent);
 
     }
-
     //menubar links
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -46,7 +44,6 @@ public class Main5Activity extends AppCompatActivity {
         inflater.inflate(R.menu.menu_main, menu);
         return true;
     }
-
     @Override
     public boolean onOptionsItemSelected (MenuItem item){
         switch (item.getItemId()){

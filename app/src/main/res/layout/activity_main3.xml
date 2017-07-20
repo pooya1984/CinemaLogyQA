@@ -51,6 +51,4 @@
         android:layout_marginTop="16dp"
         android:onClick="OpenThirdQ"
         android:text="next" />
-
-
 </RelativeLayout>

@@ -37,6 +37,4 @@
         android:layout_alignParentBottom="true"
         android:src="@drawable/cinemaroll"
         android:layout_below="@id/order_summary_text_view"/>
-
-
 </RelativeLayout>

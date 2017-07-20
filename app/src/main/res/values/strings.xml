@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">Cinema Logy Q A</string>
+    <string name="app_name">Cinemalogy Quiz</string>
+    <string name="q1">QUESTION ONE</string>
+    <string name="q2">QUESTION TWO</string>
+    <string name="q3">QUESTION TREE</string>
+    <string name="q4">QUESTION FOUR</string>
+    <string name="q5">QUESTION FIVE</string>
+    <string name="q6">QUESTION SEVEN</string>
+    <string name="q7">QUESTION EIGHT</string>
+    <string name="q8">QUESTION NINE</string>
+
+
 </resources>

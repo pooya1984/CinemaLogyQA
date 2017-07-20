@@ -5,7 +5,7 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/masks_icon"
-        android:label="Cinemalogy Quizz"
+        android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -16,21 +16,21 @@
             </intent-filter>
         </activity>
         <activity android:name=".Main2Activity"
-            android:label="Question One"/>
+            android:label="@string/q1"/>
         <activity android:name=".Main3Activity"
-            android:label="Question Two" />
+            android:label="@string/q2" />
         <activity android:name=".Main4Activity"
-            android:label="Question Three" />
+            android:label="@string/q3" />
         <activity android:name=".Main5Activity"
-            android:label="Question Four" />
+            android:label="@string/q4" />
         <activity android:name=".Main6Activity"
-            android:label="Question Five"/>
+            android:label="@string/q5"/>
         <activity android:name=".Main7Activity"
-            android:label="Question Six" />
+            android:label="@string/q6" />
         <activity android:name=".Main8Activity"
-            android:label="Question Seven" />
+            android:label="@string/q7" />
         <activity android:name=".Main9Activity"
-            android:label="Question Eight"/>
+            android:label="@string/q8"/>
         <activity android:name=".Main10Activity"
             android:label="Result" />
         <activity android:name=".About"></activity>

@@ -24,8 +24,6 @@ public class Main4Activity extends AppCompatActivity {
         quantity = mIntent.getIntExtra("score", 0);
         message = mIntent.getStringExtra("message_key");
     }
-
-
     public void OpenForthQ (View view){
         RadioButton answer1 = (RadioButton) findViewById(R.id.corect_answer_three);
         boolean right1 = answer1.isChecked();
@@ -36,9 +34,7 @@ public class Main4Activity extends AppCompatActivity {
         myIntent.putExtra("score", quantity);
         myIntent.putExtra("message_key",message);
         startActivity(myIntent);
-
     }
-
     //menubar links
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -47,7 +43,6 @@ public class Main4Activity extends AppCompatActivity {
         inflater.inflate(R.menu.menu_main, menu);
         return true;
     }
-
     @Override
     public boolean onOptionsItemSelected (MenuItem item){
         switch (item.getItemId()){
@@ -59,5 +54,4 @@ public class Main4Activity extends AppCompatActivity {
                 return true;
             default:
         }
-        return super.onOptionsItemSelected(item);}
-}
+        return super.onOptionsItemSelected(item);}}

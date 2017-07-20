@@ -15,7 +15,6 @@ public class Main10Activity extends AppCompatActivity {
     int quantity;
     String message;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,11 +25,8 @@ public class Main10Activity extends AppCompatActivity {
         message = mIntent.getStringExtra("message_key");
 
     }
-
     //result in end activity //
-
     public void ShowResult (View view){
-
 
         if (quantity>6){
             ImageView cinema = (ImageView) findViewById(R.id.cinemaroll);
@@ -57,8 +53,6 @@ public class Main10Activity extends AppCompatActivity {
         TextView orderSummaryTextView = (TextView) findViewById(R.id.order_summary_text_view);
         orderSummaryTextView.setText(messages);
     }
-
-
     //menubar links
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -67,7 +61,6 @@ public class Main10Activity extends AppCompatActivity {
         inflater.inflate(R.menu.menu_main, menu);
         return true;
     }
-
     @Override
     public boolean onOptionsItemSelected (MenuItem item){
         switch (item.getItemId()) {
@@ -107,6 +100,4 @@ public class Main10Activity extends AppCompatActivity {
                 startActivity(Intent.createChooser(sharingIntent, "Share via"));
             default:
         }
-        return super.onOptionsItemSelected(item);}
-
-}
+        return super.onOptionsItemSelected(item);}}

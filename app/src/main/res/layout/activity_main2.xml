@@ -66,5 +66,4 @@
         android:layout_marginTop="16dp"
         android:onClick="OpenSecondQ"
         android:text="next" />
-
 </RelativeLayout>

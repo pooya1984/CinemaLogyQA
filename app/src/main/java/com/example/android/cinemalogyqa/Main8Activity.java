@@ -20,7 +20,6 @@ public class Main8Activity extends AppCompatActivity {
         quantity = mIntent.getIntExtra("score", 0);
         message = mIntent.getStringExtra("message_key");
     }
-
     public void OpenEightQ (View view){
         RadioButton answer1 = (RadioButton) findViewById(R.id.corect_answer_seven);
         boolean right1 = answer1.isChecked();
@@ -32,5 +31,4 @@ public class Main8Activity extends AppCompatActivity {
         myIntent.putExtra("message_key",message);
         startActivity(myIntent);
 
-    }
-}
+    }}
