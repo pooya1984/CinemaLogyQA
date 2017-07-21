@@ -25,14 +25,12 @@ public class Main4Activity extends AppCompatActivity {
         message = mIntent.getStringExtra("message_key");
     }
     public void OpenForthQ (View view){
-        CheckBox CheckBoxTwo = (CheckBox) findViewById(R.id.digango_answer);
-        CheckBox ChechBoxThree = (CheckBox)findViewById(R.id.kill_bill);
-            boolean dGango = CheckBoxTwo.isChecked();
-            boolean killBill = ChechBoxThree.isChecked();
-            if (dGango && killBill) {
-                quantity = quantity + 1;
-            }
+        CheckBox chk2 = (CheckBox) findViewById(R.id.digango_answer);
+        CheckBox chk3 = (CheckBox)findViewById(R.id.kill_bill);
+        CheckBox chk1 = (CheckBox)findViewById(R.id.answer_three);
 
+        if(!chk3.isChecked() && chk2.isChecked()) {
+            quantity = quantity + 1;}
 
         Intent myIntent = new Intent(Main4Activity.this, Main5Activity.class);
         myIntent.putExtra("score", quantity);
