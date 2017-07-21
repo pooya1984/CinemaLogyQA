@@ -25,9 +25,11 @@ public class Main4Activity extends AppCompatActivity {
         message = mIntent.getStringExtra("message_key");
     }
     public void OpenForthQ (View view){
-        CheckBox answer1 = (CheckBox) findViewById(R.id.corect_answer_three);
-        boolean hateful = answer1.isChecked();
-            if (hateful) {
+        CheckBox CheckBoxTwo = (CheckBox) findViewById(R.id.digango_answer);
+        CheckBox ChechBoxThree = (CheckBox)findViewById(R.id.kill_bill);
+            boolean dGango = CheckBoxTwo.isChecked();
+            boolean killBill = ChechBoxThree.isChecked();
+            if (dGango && killBill) {
                 quantity = quantity + 1;
             }
 
@@ -35,8 +37,8 @@ public class Main4Activity extends AppCompatActivity {
         Intent myIntent = new Intent(Main4Activity.this, Main5Activity.class);
         myIntent.putExtra("score", quantity);
         myIntent.putExtra("message_key",message);
-        startActivity(myIntent);}
-
+        startActivity(myIntent);
+    }
     //menubar links
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

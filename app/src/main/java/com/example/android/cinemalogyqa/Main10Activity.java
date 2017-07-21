@@ -34,18 +34,31 @@ public class Main10Activity extends AppCompatActivity {
             String messages="Congratulations "+ message +"\n You are a really cinema fan"
                     +"\n you answered " + quantity + " of eight questions correct";
             displayMessage(messages);
+            {Toast.makeText(Main10Activity.this, "Correct Answers: " + quantity + "/8",
+                            Toast.LENGTH_LONG).show();
+                    displayMessage(messages);
+                }
+
         }else if (quantity>4) {
             ImageView cinema = (ImageView) findViewById(R.id.cinemaroll);
             cinema.setImageResource(R.drawable.theater_icon);
             String messages = "Good enough "+ message +"\nYou are a cinema fan but you must see more movies"
                     +"\n you answered " + quantity + " of 8 questions correct" ;
             displayMessage(messages);
+            {Toast.makeText(Main10Activity.this, "Correct Answers: " + quantity + "/8",
+                    Toast.LENGTH_LONG).show();
+                displayMessage(messages);
+            }
         }else {
             ImageView cinema = (ImageView) findViewById(R.id.cinemaroll);
             cinema.setImageResource(R.drawable.badbad);
             String messages = "Ok "+message+"\n maybey you must more see films and then try again :)"
                     +"\n you answered " + quantity + " of 8 questions correct" ;
             displayMessage(messages);
+            {Toast.makeText(Main10Activity.this, "Correct Answers: " + quantity + "/8",
+                    Toast.LENGTH_LONG).show();
+                displayMessage(messages);
+            }
         }
     }
 
