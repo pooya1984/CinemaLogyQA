@@ -7,7 +7,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.RadioButton;
+import android.widget.CheckBox;
 import android.widget.Toast;
 
 public class Main4Activity extends AppCompatActivity {
@@ -25,16 +25,18 @@ public class Main4Activity extends AppCompatActivity {
         message = mIntent.getStringExtra("message_key");
     }
     public void OpenForthQ (View view){
-        RadioButton answer1 = (RadioButton) findViewById(R.id.corect_answer_three);
-        boolean right1 = answer1.isChecked();
-        if (right1) {
-            quantity = quantity + 1;}
+        CheckBox answer1 = (CheckBox) findViewById(R.id.corect_answer_three);
+        boolean hateful = answer1.isChecked();
+            if (hateful) {
+                quantity = quantity + 1;
+            }
+
 
         Intent myIntent = new Intent(Main4Activity.this, Main5Activity.class);
         myIntent.putExtra("score", quantity);
         myIntent.putExtra("message_key",message);
-        startActivity(myIntent);
-    }
+        startActivity(myIntent);}
+
     //menubar links
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

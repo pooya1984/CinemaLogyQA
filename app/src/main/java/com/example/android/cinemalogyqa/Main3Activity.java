@@ -24,13 +24,17 @@ public class Main3Activity extends AppCompatActivity {
         message = mIntent.getStringExtra("message_key");
 
     }
-    public void OpenThirdQ (View view){
+    public void OpenThirdQ (View view) {
         EditText nameField = (EditText) findViewById(R.id.edit_text_view);
         String name = nameField.getText().toString();
 
         if (name.startsWith("ken loach")) {
-        }
+
         quantity = quantity + 1;
+    }else {
+            quantity = quantity+0;
+        }
+
 
         Intent myIntent = new Intent(Main3Activity.this, Main4Activity.class);
         myIntent.putExtra("score", quantity);
