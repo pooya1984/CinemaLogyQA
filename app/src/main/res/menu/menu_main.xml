@@ -10,13 +10,13 @@
     <item
         android:id="@+id/thema_id"
         android:showAsAction="never"
-        android:title="Thema"
+        android:title="Themas"
         tools:ignore="AppCompatResource" />
     <item
         android:id="@+id/share_id"
         android:icon="@drawable/ic_share_black_48dp_1x"
         android:showAsAction="always"
-        android:title="Share"
         android:actionProviderClass="android.widget.ShareActionProvider"
-        tools:ignore="AppCompatResource" />
+        tools:ignore="AppCompatResource"
+        android:title="" />
 </menu>
