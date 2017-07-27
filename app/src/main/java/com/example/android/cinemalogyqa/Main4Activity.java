@@ -28,9 +28,8 @@ public class Main4Activity extends AppCompatActivity {
         CheckBox chk2 = (CheckBox) findViewById(R.id.digango_answer);
         CheckBox chk3 = (CheckBox) findViewById(R.id.kill_bill);
         CheckBox chk1 = (CheckBox) findViewById(R.id.answer_three);
-        Boolean correctAnswer2 = chk2.isChecked();
-        Boolean correctAnswer3 = chk3.isChecked();
-        Boolean wrongAnswer1 = chk1.isChecked();
+
+
         if (!chk1.isChecked() && chk2.isChecked()&& chk3.isChecked()) {
             quantity = quantity + 1;}
 
