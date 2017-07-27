@@ -12,10 +12,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.android.cinemalogyqa.Main4Activity">
 
-
-
-
-
     <CheckBox
         android:id="@+id/answer_three"
         android:layout_width="wrap_content"
@@ -52,8 +48,6 @@
         android:textColor="#FF5722"
         android:textSize="20sp"
         android:textStyle="bold" />
-
-
     <Button
         android:id="@+id/open_forth_q"
         android:layout_width="wrap_content"
@@ -62,6 +56,4 @@
         android:layout_marginTop="16dp"
         android:onClick="OpenForthQ"
         android:text="next" />
-
-
 </LinearLayout>

@@ -35,12 +35,10 @@ public class Main3Activity extends AppCompatActivity {
             quantity = quantity+0;
         }
 
-
         Intent myIntent = new Intent(Main3Activity.this, Main4Activity.class);
         myIntent.putExtra("score", quantity);
         myIntent.putExtra("message_key",message);
         startActivity(myIntent);
-
     }
     //menubar links
     @Override
