@@ -22,7 +22,7 @@
         android:text="In which Film did Natallie Portman and Jean Reno appeare together?"
         android:textAlignment="center"
         android:textColor="#FF5722"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <ImageView
