@@ -24,20 +24,25 @@ public class Main4Activity extends AppCompatActivity {
         quantity = mIntent.getIntExtra("score", 0);
         message = mIntent.getStringExtra("message_key");
     }
-    public void OpenForthQ (View view) {
+
+    public void OpenForthQ(View view) {
         CheckBox chk2 = (CheckBox) findViewById(R.id.digango_answer);
         CheckBox chk3 = (CheckBox) findViewById(R.id.kill_bill);
         CheckBox chk1 = (CheckBox) findViewById(R.id.answer_three);
 
-
-        if (!chk1.isChecked() && chk2.isChecked()&& chk3.isChecked()) {
-            quantity = quantity + 1;}
+        if (chk2.isChecked() && chk3.isChecked()) {
+            // Award Point only if incorrect CheckBoxes are unchecked
+            if (!chk1.isChecked()) {
+                quantity = quantity + 1;
+            }
+        }
 
         Intent myIntent = new Intent(Main4Activity.this, Main5Activity.class);
         myIntent.putExtra("score", quantity);
-        myIntent.putExtra("message_key",message);
+        myIntent.putExtra("message_key", message);
         startActivity(myIntent);
     }
+
     //menubar links
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -46,15 +51,18 @@ public class Main4Activity extends AppCompatActivity {
         inflater.inflate(R.menu.menu_main, menu);
         return true;
     }
+
     @Override
-    public boolean onOptionsItemSelected (MenuItem item){
-        switch (item.getItemId()){
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
             case R.id.About_id:
                 startActivity(new Intent(this, About.class));
                 return true;
             case R.id.thema_id:
-                Toast.makeText(getApplicationContext(),"No thema yet",Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "No thema yet", Toast.LENGTH_LONG).show();
                 return true;
             default:
         }
-        return super.onOptionsItemSelected(item);}}
+        return super.onOptionsItemSelected(item);
+    }
+}
